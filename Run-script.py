@@ -1,6 +1,12 @@
 
 from optimizer import run
+import os
 
+#### Make results directory if it does not exist
+directory = './Results/'
+if not os.path.exists(directory):
+    os.makedirs(directory)
+    
 ######## Define Optimizers 
 ######## Algorithms from EvoloPy package can be used. Other arbitrary algorithms can also be used. 
 #           To run the MAB-OS or Random bandit setting, we can use "BANDIT" and "RANDOM" algorithms, respectively.
