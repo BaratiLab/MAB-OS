@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
 """
-Created on Mon May 16 14:19:49 2016
+From EvoloPy package 
 
-@author: hossam
+Original @author: hossam
 """
 import random
 import numpy
@@ -13,11 +12,6 @@ import time
 
 def WOA(objf, lb, ub, dim, SearchAgents_no, Max_iter):
 
-    # dim=30
-    # SearchAgents_no=50
-    # lb=-100
-    # ub=100
-    # Max_iter=500
     if not isinstance(lb, list):
         lb = [lb] * dim
     if not isinstance(ub, list):
